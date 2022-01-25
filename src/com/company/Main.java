@@ -1,14 +1,33 @@
-package com.company;
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        int n = Integer.valueOf(str);
-        int factorial = 1;
-        for (int i = 1; i <= n; i++) {
-            factorial = factorial * i;
-        }
-        System.out.println(factorial);
-    }
-}
+input A
+input B
+input C
+if (A<B) AND (B<C) then
+        output A
+        output B
+        output C
+end if
+if (A<C) AND (C<B) then
+        output A
+        output C
+        output B
+end if
+if (B<A) AND (A<C) then
+        output B
+        output A
+        output C
+end if
+if (B<C) AND (C<A) then
+        output B
+        output C
+        output A
+end if
+if (C<A) AND (A<B) then
+        output C
+        output A
+        output B
+end if
+if (C<B) AND (B<A) then
+        output C
+        output B
+        output A
+end if
